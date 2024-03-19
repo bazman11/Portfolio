@@ -1,1 +1,133 @@
-<p>resume works!</p>
+<div class="container text-center">
+  <button class="btn btn-primary mt-2 mb-2 shadow-border" (click)="download()">
+    Download PDF CV
+  </button>
+
+  <hr>
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow mt-2">
+      <accordion-group [(isOpen)]="isWorkExperineceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Work Experience</div>
+
+        <div>
+          <div *ngIf="!isWorkExperineceOpen">></div>
+          <div *ngIf="isWorkExperineceOpen">v</div>
+        </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer</h2>
+            <h3 class="text-primary">Sample Company</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+              <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+              <li>Fusce id velit ut tortor pretium.</li>
+              <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Manager</h2>
+          <h3 class="text-primary">Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+            <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+            <li>Fusce id velit ut tortor pretium.</li>
+            <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+          </ul>
+        </div>
+      </accordion-group>
+    </accordion>
+
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Education</div>
+
+        <div>
+          <div *ngIf="!isEducationOpen">></div>
+          <div *ngIf="isEducationOpen">v</div>
+        </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer</h2>
+            <h3 class="text-primary">Sample Company</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+              <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+              <li>Fusce id velit ut tortor pretium.</li>
+              <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Manager</h2>
+          <h3 class="text-primary">Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+            <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+            <li>Fusce id velit ut tortor pretium.</li>
+            <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+          </ul>
+        </div>
+      </accordion-group>
+    </accordion>
+
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Skills</div>
+
+        <div>
+          <div *ngIf="!isSkillsOpen">></div>
+          <div *ngIf="isSkillsOpen">v</div>
+        </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer</h2>
+            <h3 class="text-primary">Sample Company</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+              <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+              <li>Fusce id velit ut tortor pretium.</li>
+              <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Manager</h2>
+          <h3 class="text-primary">Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis.</li>
+            <li>Iaculis eu non diam phasellus vestibulum lorem sed risus.</li>
+            <li>Fusce id velit ut tortor pretium.</li>
+            <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor.</li>
+          </ul>
+        </div>
+      </accordion-group>
+    </accordion>
+
+  </div>
+</div>
